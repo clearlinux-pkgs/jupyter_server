@@ -1,0 +1,22 @@
+--- jupyter_server-1.1.4/jupyter_server.egg-info/requires.txt~	2021-01-04 16:59:05.000000000 +0000
++++ jupyter_server-1.1.4/jupyter_server.egg-info/requires.txt	2021-01-06 18:11:42.056604006 +0000
+@@ -10,7 +10,7 @@
+ Send2Trash
+ terminado>=0.8.3
+ prometheus_client
+-anyio>=2.0.2
++anyio
+ 
+ [:sys_platform == "win32"]
+ pywin32>=1.0
+--- jupyter_server-1.1.4/setup.py~	2021-01-04 16:58:27.000000000 +0000
++++ jupyter_server-1.1.4/setup.py	2021-01-06 18:12:04.085603699 +0000
+@@ -52,7 +52,7 @@
+         'terminado>=0.8.3',
+         'prometheus_client',
+         "pywin32>=1.0 ; sys_platform == 'win32'",
+-        "anyio>=2.0.2",
++        "anyio",
+     ],
+     extras_require = {
+         'test': ['coverage', 'requests',
