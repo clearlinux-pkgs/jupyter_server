@@ -1,11 +1,11 @@
---- jupyter_server-1.6.4/jupyter_server.egg-info/requires.txt~	2021-04-21 21:01:12.000000000 +0000
-+++ jupyter_server-1.6.4/jupyter_server.egg-info/requires.txt	2021-04-24 16:42:00.654817564 +0000
-@@ -12,7 +12,7 @@
- Send2Trash
- terminado>=0.8.3
- prometheus_client
--anyio<3,>=2.0.2
-+anyio>=2.0.2
+--- jupyter_server-1.6.4/setup.cfg~	2021-04-21 21:01:12.000000000 +0000
++++ jupyter_server-1.6.4/setup.cfg	2021-04-24 18:10:29.970743643 +0000
+@@ -42,7 +42,7 @@
+ 	terminado>=0.8.3
+ 	prometheus_client
+ 	pywin32>=1.0 ; sys_platform == 'win32'
+-	anyio>=2.0.2,<3
++	anyio>=2.0.2
  
- [:sys_platform == "win32"]
- pywin32>=1.0
+ [options.extras_require]
+ test = coverage; pytest; pytest-cov; pytest-mock; requests; pytest-tornasync; pytest-console-scripts; ipykernel
