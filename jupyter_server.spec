@@ -4,7 +4,7 @@
 #
 Name     : jupyter_server
 Version  : 1.6.4
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/7e/1f/bfad98b47919b517b2d5f201916ec00414776ed500b306561388eeecf8a0/jupyter_server-1.6.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7e/1f/bfad98b47919b517b2d5f201916ec00414776ed500b306561388eeecf8a0/jupyter_server-1.6.4.tar.gz
 Summary  : The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.
@@ -41,6 +41,7 @@ BuildRequires : pyzmq
 BuildRequires : terminado
 BuildRequires : tornado
 BuildRequires : traitlets
+Patch1: deps.patch
 
 %description
 # Jupyter Server
@@ -101,13 +102,14 @@ python3 components for the jupyter_server package.
 %prep
 %setup -q -n jupyter_server-1.6.4
 cd %{_builddir}/jupyter_server-1.6.4
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1619276410
+export SOURCE_DATE_EPOCH=1619282602
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
