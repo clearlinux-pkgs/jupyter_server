@@ -4,7 +4,7 @@
 #
 Name     : jupyter_server
 Version  : 1.11.1
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/59/e6/883cfe63668d140f4246ba712b6d7e44d44d755b570ff1a4dec0267035d2/jupyter_server-1.11.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/59/e6/883cfe63668d140f4246ba712b6d7e44d44d755b570ff1a4dec0267035d2/jupyter_server-1.11.1.tar.gz
 Summary  : The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.
@@ -111,7 +111,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633450108
+export SOURCE_DATE_EPOCH=1635746038
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
