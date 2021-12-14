@@ -4,7 +4,7 @@
 #
 Name     : jupyter_server
 Version  : 1.13.1
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/17/70/9f98505763c6cf2244163fd58441f95f80a3677f8a09bc9908ba21685e45/jupyter_server-1.13.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/17/70/9f98505763c6cf2244163fd58441f95f80a3677f8a09bc9908ba21685e45/jupyter_server-1.13.1.tar.gz
 Summary  : The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.
